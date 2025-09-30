@@ -656,7 +656,7 @@ ul {
 .badge {
   padding: 0.25rem 0.75rem;
   border-radius: var(--radius-full);
-  font-size: 0.60rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
