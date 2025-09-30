@@ -1,20 +1,22 @@
 // Moderators data - EDIT THIS ARRAY TO ADD/MODIFY MODERATORS
 const moderators = [
   {
-    name: "Dr. Mohammad Ali",
-    role: "Faculty Advisor",
-    department: "Computer Science Department",
+    name: "Tariq Aziz Titu",
+    role: "Lecturer in ICT",
+    department: "Department of ICT",
     qualification: "Ph.D. in Computer Science",
-    email: "dr.ali@noubahini.edu.bd",
+    email: "titu.aiub@gmail.com",
     linkedin: "#",
+    image: "images/titu.jpg",
   },
   {
-    name: "Prof. Ayesha Rahman",
-    role: "Co-Advisor",
-    department: "Information Technology Department",
+    name: "Md. Matiar Rahman",
+    role: "Head of Department",
+    department: "Department of ICT",
     qualification: "M.Sc. in Information Technology",
-    email: "prof.ayesha@noubahini.edu.bd",
+    email: "eng.matiar@gmail.com",
     linkedin: "#",
+    image: "images/matiar.jpg",
   },
 ]
 
@@ -31,7 +33,11 @@ function createModeratorCard(moderator) {
   return `
         <div class="card team-card">
             <div class="avatar">
-                ${getInitials(moderator.name)}
+                ${
+                  moderator.image
+                    ? `<img src="${moderator.image}" alt="${moderator.name}" class="avatar-img" />`
+                    : getInitials(moderator.name)
+                }
             </div>
             <h3 class="team-name">${moderator.name}</h3>
             <p class="team-role">${moderator.role}</p>
