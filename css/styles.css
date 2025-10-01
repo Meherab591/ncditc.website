@@ -1,4 +1,47 @@
 /* ===== CSS Variables ===== */
+
+/* filepath: d:\NCD IT Club\website\html.css.jvs\css\styles.css */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-grid,
+  .features-grid,
+  .team-grid,
+  .projects-grid,
+  .footer-grid,
+  .activities-grid,
+  .mvv-grid {
+    grid-template-columns: 1fr;
+  }
+  .navbar .nav-menu {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
+
 :root {
   /* Colors - Dark theme with golden accents */
   --color-background: #0a0e1a;
